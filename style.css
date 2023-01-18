@@ -255,11 +255,15 @@ button{
 .btn-rd{
 	border-radius: 40px;
 }
-.btn-clean{
-	border:1px solid rgba(0,0,0,.08);
-	border-bottom-color:rgba(0,0,0,.1);
-	text-shadow:0 1px 0 rgba(0,0,1,.1);
-	box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
+.btn-glossy{
+	border:1px solid rgba(0,0,0,.09);
+	border-bottom-color:rgba(0,0,0,.2);
+	text-shadow:0 1px 0 rgba(0,0,1,.2);
+	box-shadow: 0 1px 3px rgba(0,0,1,.35), inset 0 1px 0 0 rgba(255,255,255,.4), inset 0 1px 0 2px rgba(255,255,255,.08);
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
+	 background-image: -o-linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
+	background-image: linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
 }
 
 
@@ -319,6 +323,11 @@ button{
 	stroke-linecap:round;
 }
 
+/* Hide Object */
+.object-hidden{
+	display:none;
+}
+
 /* = Custom Styling
 -------------------------------------------------------------- */
 
@@ -337,10 +346,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	text-transform:none;
 	letter-spacing:px;
 	word-spacing:14px;
-	background-color:#BFBFBF;
 	font-family:"OCRAStd";
 	line-height:px;
 	font-weight:600;
+	text-shadow:0px 5px 2px #FE3FFE,-7px 0px 9px #ABDA1E,-6px 3px 2px #000000;
 }
 .h1-style{
 	font-size:130px;
@@ -385,10 +394,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .p-bloc-1-style{
 	font-family:Lato;
 	font-weight:400;
+	width:81.49%;
 }
 .p-3-style{
 	font-family:Lato;
 	font-weight:400;
+	width:81.26%;
 }
 .img-style{
 	width:300px;
@@ -408,6 +419,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .p-padding-top{
 	padding-top:60px;
+	width:80.69%;
 }
 .p-bloc-2-padding-top{
 	padding-top:17px;
@@ -428,19 +440,22 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h1-subversionism-style{
 	font-family:Lato;
 	font-weight:900;
+	width:97.47%;
+	margin-left:82px;
 }
 .ghostexhibtion{
 	color:#FE3FFF!important;
 }
 .p-3-bloc-1-style{
-	width:95.77%;
+	width:71.23%;
 	font-size:19px;
 }
 .quoteline{
 	color:#ABDA1F!important;
 }
 .container-div-margin-left{
-	margin-left:25px;
+	margin-left:85px;
+	width:74.37%;
 }
 .paragraph{
 	color:#000000!important;
@@ -454,6 +469,28 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .p-style{
 	font-size:11px;
+	line-height:px;
+	width:43.03%;
+}
+.p-9-style{
+	width:81.38%;
+}
+.headings{
+	text-transform:lowercase;
+	text-shadow:-3px -7px 2px rgba(0,0,0,0.25);
+}
+.p-8-style{
+	width:70.98%;
+}
+.img-bloc-6-style{
+	width:120px;
+}
+.bloc-bloc-6-margin-bottom{
+	padding-bottom:0px;
+	margin-bottom:-18px;
+}
+.img-bloc-0-style{
+	width:700px;
 }
 
 /* = Colour
@@ -515,12 +552,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .ltc-purple-pizzazz:hover{
 	color:#cc33cc!important;
-}
-.ltc-yellow-green{
-	color:#ABDA1F!important;
-}
-.ltc-yellow-green:hover{
-	color:#89ae19!important;
 }
 
 /* Bloc image backgrounds */
@@ -653,6 +684,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.p-bloc-2-style{
 		width:79.53%;
 	}
+	.h1-subversionism-style{
+		margin-left:45px;
+	}
+	.container-div-margin-left{
+		margin-left:45px;
+	}
 	
 	/* MD Text Margin Offsets */
 	.mg-clear-md{
@@ -687,6 +724,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.paragraph{
 		font-size:16px;
+	}
+	.h1-subversionism-style{
+		width:79.45%;
 	}
 	
 	/* Small Text Margin Offsets */
@@ -781,6 +821,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.h1-subversionism-style{
 		font-size:30px;
+		margin-left:-6px;
 	}
 	.paragraphhowto{
 		font-size:12px;
@@ -792,6 +833,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.headings{
 		font-size:25px;
+	}
+	.paragraphfooter{
+		font-family:"Lato";
+		font-weight:300;
+		color:#D5D5D5!important;
+		font-size:8px;
 	}
 	
 	/* Mobile Text Margin Offsets */
