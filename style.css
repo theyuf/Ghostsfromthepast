@@ -840,6 +840,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		color:#D5D5D5!important;
 		font-size:8px;
 	}
+	p{
+		font-size:12px;
+	}
 	
 	/* Mobile Text Margin Offsets */
 	.mg-clear-xs{
