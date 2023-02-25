@@ -305,6 +305,11 @@ button{
 	background-image: linear-gradient(bottom, rgba(0,0,0,.07) 0%, rgba(255,255,255,.07) 100%);
 }
 
+/* = Icons
+-------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
 
 
 /* = Text & Icon Styles
